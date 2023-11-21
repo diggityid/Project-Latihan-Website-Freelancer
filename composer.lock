@@ -4,9 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "09b5f18af87c35e21622dfb8ab34715a",
     "packages": [
         {
+=======
+    "content-hash": "6ab5786e1e625ece85ebf586fa865318",
+    "packages": [
+        {
+            "name": "asm89/stack-cors",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "73e5b88775c64ccc0b84fb60836b30dc9d92ac4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/73e5b88775c64ccc0b84fb60836b30dc9d92ac4a",
+                "reference": "73e5b88775c64ccc0b84fb60836b30dc9d92ac4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "symfony/http-foundation": "^4|^5|^6",
+                "symfony/http-kernel": "^4|^5|^6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7|^9",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "support": {
+                "issues": "https://github.com/asm89/stack-cors/issues",
+                "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
+            },
+            "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             "name": "bacon/bacon-qr-code",
             "version": "2.0.8",
             "source": {
@@ -538,6 +600,7 @@
         },
         {
             "name": "fruitcake/laravel-cors",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -555,17 +618,44 @@
                 "illuminate/contracts": "^6|^7|^8|^9",
                 "illuminate/support": "^6|^7|^8|^9",
                 "php": "^7.4|^8.0"
+=======
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitcake/laravel-cors.git",
+                "reference": "783a74f5e3431d7b9805be8afb60fd0a8f743534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/783a74f5e3431d7b9805be8afb60fd0a8f743534",
+                "reference": "783a74f5e3431d7b9805be8afb60fd0a8f743534",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "^2.0.1",
+                "illuminate/contracts": "^6|^7|^8|^9",
+                "illuminate/support": "^6|^7|^8|^9",
+                "php": ">=7.2"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "require-dev": {
                 "laravel/framework": "^6|^7.24|^8",
                 "orchestra/testbench-dusk": "^4|^5|^6|^7",
+<<<<<<< HEAD
                 "phpunit/phpunit": "^9",
+=======
+                "phpunit/phpunit": "^6|^7|^8|^9",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "3.0-dev"
+=======
+                    "dev-master": "2.1-dev"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 },
                 "laravel": {
                     "providers": [
@@ -601,7 +691,11 @@
             ],
             "support": {
                 "issues": "https://github.com/fruitcake/laravel-cors/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/fruitcake/laravel-cors/tree/v3.0.0"
+=======
+                "source": "https://github.com/fruitcake/laravel-cors/tree/v2.2.0"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -614,6 +708,7 @@
                 }
             ],
             "abandoned": true,
+<<<<<<< HEAD
             "time": "2022-02-23T14:53:22+00:00"
         },
         {
@@ -686,6 +781,9 @@
                 }
             ],
             "time": "2023-10-12T05:21:21+00:00"
+=======
+            "time": "2022-02-23T14:25:13+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "graham-campbell/result-type",
@@ -2175,6 +2273,7 @@
         },
         {
             "name": "monolog/monolog",
+<<<<<<< HEAD
             "version": "2.9.2",
             "source": {
                 "type": "git",
@@ -2185,6 +2284,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Seldaek/monolog/zipball/437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
                 "reference": "437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
+=======
+            "version": "2.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "f259e2b15fb95494c83f52d3caad003bbf5ffaa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
+                "reference": "f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -2261,7 +2372,11 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/Seldaek/monolog/tree/2.9.2"
+=======
+                "source": "https://github.com/Seldaek/monolog/tree/2.9.1"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -2273,7 +2388,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-27T15:25:26+00:00"
+=======
+            "time": "2023-02-06T13:44:46+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "nesbot/carbon",
@@ -2445,6 +2564,7 @@
         },
         {
             "name": "nette/utils",
+<<<<<<< HEAD
             "version": "v4.0.3",
             "source": {
                 "type": "git",
@@ -2455,6 +2575,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/utils/zipball/a9d127dd6a203ce6d255b2e2db49759f7506e015",
                 "reference": "a9d127dd6a203ce6d255b2e2db49759f7506e015",
+=======
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "cead6637226456b35e1175cc53797dd585d85545"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/cead6637226456b35e1175cc53797dd585d85545",
+                "reference": "cead6637226456b35e1175cc53797dd585d85545",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -2525,9 +2657,15 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/nette/utils/tree/v4.0.3"
             },
             "time": "2023-10-29T21:02:13+00:00"
+=======
+                "source": "https://github.com/nette/utils/tree/v4.0.2"
+            },
+            "time": "2023-09-19T11:58:07+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "nikic/php-parser",
@@ -4155,6 +4293,7 @@
         },
         {
             "name": "symfony/http-foundation",
+<<<<<<< HEAD
             "version": "v5.4.30",
             "source": {
                 "type": "git",
@@ -4165,6 +4304,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/671769f79de0532da1478c60968b42506e185d2e",
                 "reference": "671769f79de0532da1478c60968b42506e185d2e",
+=======
+            "version": "v5.4.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "365992c83a836dfe635f1e903ccca43ee03d3dd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/365992c83a836dfe635f1e903ccca43ee03d3dd2",
+                "reference": "365992c83a836dfe635f1e903ccca43ee03d3dd2",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -4211,7 +4362,11 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-foundation/tree/v5.4.30"
+=======
+                "source": "https://github.com/symfony/http-foundation/tree/v5.4.28"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -4227,6 +4382,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-28T23:35:12+00:00"
         },
         {
@@ -4241,6 +4397,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/16b9b36f81631155546d9f05271dd027c83c3dd4",
                 "reference": "16b9b36f81631155546d9f05271dd027c83c3dd4",
+=======
+            "time": "2023-08-21T07:23:18+00:00"
+        },
+        {
+            "name": "symfony/http-kernel",
+            "version": "v5.4.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-kernel.git",
+                "reference": "f53265fc6bd2a7f3a4ed4e443b76e750348ac3f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f53265fc6bd2a7f3a4ed4e443b76e750348ac3f7",
+                "reference": "f53265fc6bd2a7f3a4ed4e443b76e750348ac3f7",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -4323,7 +4495,11 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.30"
+=======
+                "source": "https://github.com/symfony/http-kernel/tree/v5.4.29"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -4339,7 +4515,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-29T00:07:40+00:00"
+=======
+            "time": "2023-09-30T06:31:17+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "symfony/mime",
@@ -5486,6 +5666,7 @@
         },
         {
             "name": "symfony/translation",
+<<<<<<< HEAD
             "version": "v6.3.7",
             "source": {
                 "type": "git",
@@ -5496,6 +5677,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation/zipball/30212e7c87dcb79c83f6362b00bde0e0b1213499",
                 "reference": "30212e7c87dcb79c83f6362b00bde0e0b1213499",
+=======
+            "version": "v6.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "869b26c7a9d4b8a48afdd77ab36031909c87e3a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/869b26c7a9d4b8a48afdd77ab36031909c87e3a2",
+                "reference": "869b26c7a9d4b8a48afdd77ab36031909c87e3a2",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -5561,7 +5754,11 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/translation/tree/v6.3.7"
+=======
+                "source": "https://github.com/symfony/translation/tree/v6.3.6"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -5577,7 +5774,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-28T23:11:45+00:00"
+=======
+            "time": "2023-10-17T11:32:53+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "symfony/translation-contracts",
@@ -8268,6 +8469,7 @@
         },
         {
             "name": "symfony/yaml",
+<<<<<<< HEAD
             "version": "v6.3.7",
             "source": {
                 "type": "git",
@@ -8278,6 +8480,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/9758b6c69d179936435d0ffb577c3708d57e38a8",
                 "reference": "9758b6c69d179936435d0ffb577c3708d57e38a8",
+=======
+            "version": "v6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "e23292e8c07c85b971b44c1c4b87af52133e2add"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e23292e8c07c85b971b44c1c4b87af52133e2add",
+                "reference": "e23292e8c07c85b971b44c1c4b87af52133e2add",
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
                 "shasum": ""
             },
             "require": {
@@ -8320,7 +8534,11 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/yaml/tree/v6.3.7"
+=======
+                "source": "https://github.com/symfony/yaml/tree/v6.3.3"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
             },
             "funding": [
                 {
@@ -8336,7 +8554,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-28T23:31:00+00:00"
+=======
+            "time": "2023-07-31T07:08:24+00:00"
+>>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         },
         {
             "name": "theseer/tokenizer",
