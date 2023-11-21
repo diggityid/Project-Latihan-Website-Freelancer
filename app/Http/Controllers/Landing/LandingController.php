@@ -14,19 +14,11 @@ class LandingController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         return view('pages.landing.index');
     }
 
     /**
      * Show the form for creating a new resource
-=======
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
      *
      * @return \Illuminate\Http\Response
      */
@@ -95,20 +87,14 @@ class LandingController extends Controller
 
     public function explore(){
 
-<<<<<<< HEAD
         return view('pages.landing.explore');
 
-=======
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     public function detail($id){
 
-<<<<<<< HEAD
         return view('pages.landing.detail');
 
-=======
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     public function booking($id){

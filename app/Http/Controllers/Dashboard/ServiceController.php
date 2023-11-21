@@ -14,11 +14,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         return view('pages.dashboard.service.index');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
@@ -28,11 +24,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
         return view('pages.dashboard.service.create');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
@@ -65,11 +57,7 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-<<<<<<< HEAD
         return view('pages.dashboard.service.edit');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**

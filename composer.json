@@ -6,11 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-<<<<<<< HEAD
         "fruitcake/laravel-cors": "^3.0",
-=======
-        "fruitcake/laravel-cors": "^2.0",
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/jetstream": "^2.9",

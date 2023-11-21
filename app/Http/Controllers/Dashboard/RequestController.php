@@ -14,11 +14,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         return view('pages.dashboard.request.index');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
@@ -50,11 +46,7 @@ class RequestController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
         return view('pages.dashboard.request.detail');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**

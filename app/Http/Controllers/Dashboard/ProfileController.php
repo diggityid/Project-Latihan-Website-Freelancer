@@ -14,11 +14,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         return view('pages.dashboard.profile.index');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**

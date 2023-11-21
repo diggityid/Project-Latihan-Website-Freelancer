@@ -14,11 +14,7 @@ class MyOrderController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
         return view('pages.dashboard.order.index');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
@@ -50,11 +46,7 @@ class MyOrderController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
         return view('pages.dashboard.order.detail');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
@@ -65,11 +57,7 @@ class MyOrderController extends Controller
      */
     public function edit($id)
     {
-<<<<<<< HEAD
         return view('pages.dashboard.order.edit');
-=======
-        //
->>>>>>> bef4937796d024120a229dc14f511e4977bc6d5d
     }
 
     /**
