@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'scantum' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
     ],
 
     /*

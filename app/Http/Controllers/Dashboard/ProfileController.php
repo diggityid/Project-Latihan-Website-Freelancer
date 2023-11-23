@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use file;
+use File;
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
 use App\Models\DetailUser;
 use App\Models\ExperienceUser;
+use Illuminate\Support\Facades\File as FacadesFile;
 
 
 class ProfileController extends Controller
@@ -93,9 +94,64 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateProfileRequest $request_profile, UpdateDetailUserRequest $request_detail_user)
     {
-        //
+        $data_profile = $request_profile-> all();
+        $data_detail_user = $request_detail_user-> all();
+        
+        //get photo user
+        $get_photo = DetailUser::where('users_id', Auth::user()->id)->first();
+
+        //delete old file from strorage
+        if(isset($data_detail_user['photo'])){
+            $data = 'storage/'.$get_photo['photo'];
+            if(FacadesFile::exists($data)){
+                FacadesFile::delete($data);
+            }else{
+                FacadesFile::delete('storage/app/public/'.$get_photo['photo']);
+            }
+        }
+
+        //store file to storage
+        if(isset($data_detail_user['photo'])){
+            $data_detail_user['photo'] = $request_detail_user->file('photo')->storage(
+                'assets/photo', 'public'
+            );
+        }
+
+        #proses save to user
+        $user = User::find(Auth::user()->id);
+        $user->update($data_profile);
+
+        //proses save to detail user
+        $detail_user = DetailUser::find($user->detail_user->id);
+        $detail_user->update($data_detail_user);
+
+        //proses save to experience
+        $experience_user_id = ExperienceUser::where('detail_user_id', $detail_user['id'])->first();
+        if(isset($experience_user_id)){
+            foreach($data_profile['experience'] as $key => $value){
+                $experience_user = ExperienceUser::find($key);
+                $experience_user->detail_user_id = $detail_user['id'];
+                $experience_user->experience = $value;
+                $experience_user->save();
+            }
+
+        }else{
+            foreach($data_profile['experience'] as $key => $value){
+                if(isset($value)){
+                    $experience_user = new ExperienceUser;
+                    $experience_user->detail_user_id = $detail_user['id'];
+                    $experience_user->experience = $value;
+                    $experience_user->save();
+                }
+                
+            }
+
+        }
+
+        toast()->success('Update has been success');
+        return back();
     }
 
     /**
@@ -111,7 +167,26 @@ class ProfileController extends Controller
 
     //custom
 
-    public function delete(){
+    public function delete()
+    {
+        //get user
+        $get_user_photo = DetailUser::where('users_id', Auth::user()->id)->first();
+        $path_photo = $get_user_photo['photo'];
 
+        //second update value to null
+        $data = DetailUser::find($get_user_photo['id']);
+        $data->photo = NULL;
+        $data->save();
+
+        //delete file photo
+        $data = 'storage/'.$path_photo;
+        if(FacadesFile::exists($data)){
+            FacadesFile::delete($data);
+        }else{
+            FacadesFile::delete('storage/app/public'.$path_photo);
+        }
+
+        toast()->success('Delete has been success');
+        return back();
     }
 }
